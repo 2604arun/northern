@@ -65,7 +65,7 @@ function CollapseTable(props) {
               <nav className='d-flex justify-content-center'>
                 <ul className='pagination'>
                   {new Array(Math.ceil(excelData.length/perPage)).fill(0).map((item, index)=> (
-                   <li className='page-link' onClick={()=>setCurrentPage(index)}>{index+1}</li>
+                   <li key={index} className='page-link' onClick={()=>setCurrentPage(index)}>{index+1}</li>
                   ))}
                   
                 </ul>
