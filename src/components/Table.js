@@ -14,7 +14,6 @@ function CollapseTable(props) {
     const [collapse,setCollapse] = useState(true)
 
     const sorting = (col) => {
-      console.log(col)
       if(order === 'ASC'){
         const sorted = [...excelData].sort((a,b)=>
         a[col].toLowerCase() > b[col].toLowerCase() ? 1 : -1)
