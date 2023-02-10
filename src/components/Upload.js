@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import * as XLSX from 'xlsx'
 import './upload.css'
 
+
 function Upload(props) {
     const {setExcelData} = props
     const [excelFile, setExcelFile] = useState(null);
@@ -62,7 +63,3 @@ function Upload(props) {
 }
 
 export default Upload
-
-Upload.propTypes = {
-    setExcelData: PropTypes.any,
-}
