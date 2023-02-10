@@ -8,8 +8,6 @@ function Upload( props) {
     const [excelFileError, setExcelFileError] = useState(null);
     const fileType = ['application/vnd.ms-excel','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']
 
-    console.log(excelFile)
-
     const handleFile = (e) => {
         let seletedFile = e.target.files[0];
         if(seletedFile) {
