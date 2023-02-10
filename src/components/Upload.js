@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import * as XLSX from 'xlsx'
 import './upload.css'
 
-function Upload( props) {
+function Upload(props) {
     const {setExcelData} = props
     const [excelFile, setExcelFile] = useState(null);
     const [excelFileError, setExcelFileError] = useState(null);
