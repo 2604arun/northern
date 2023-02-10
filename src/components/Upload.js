@@ -62,3 +62,7 @@ function Upload(props) {
 }
 
 export default Upload
+
+Upload.propTypes = {
+    setExcelData: PropTypes.any,
+}
